@@ -153,8 +153,6 @@ type ApiHandler struct {
 	// Populated during block production alongside selfBuildPayloads.
 	// [New in Gloas:EIP7732]
 	selfBuildEnvelopes *lru.Cache[uint64, *cltypes.ExecutionPayloadEnvelope]
-
-	executionPayloadEnvelopeAdmissions executionPayloadEnvelopeAdmissions
 }
 
 func NewApiHandler(
